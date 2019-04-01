@@ -7,6 +7,7 @@
 body{
     background: #24272E;
     font-family: Asap, sans-serif;
+    user-select: none;
 }
 header{
     background: #f1efef;
@@ -15,7 +16,6 @@ header{
 header > h1{
     color: #223344;
     text-align: center;
-    font-smoothing: antialiased;
 }
 .score-board{
     border: 2px solid white;
@@ -66,9 +66,41 @@ header > h1{
 .choice:hover{
     background: #111111;
 }
+footer{
+    text-align: center;
+    position: relative;
+}
 #action-message{
     color: white;
     font-weight: bold;
-    text-align: center;
     font-size: 1.5em;
+}
+#reset_btn{
+    background: #fe5b5b;
+    color: #141313;
+    padding: 10px 20px;
+    margin-top: 12px;
+    font-size: 1.2em;
+    font-weight: 550;
+    border-radius: 5px;
+    right: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all .3s ease;
+}
+#reset_btn:hover{
+    background: #d64a4a;
+}
+.green-glow{
+    border: 4px solid #14fe11;
+    box-shadow: 0 0 10px #13d310;
+}
+.red-glow{
+    border: 4px solid #fe1111;
+    box-shadow: 0 0 10px #d31010;
+}
+.gray-glow{
+    border: 4px solid #444444;
+    box-shadow: 0 0 10px #353535;
 }
